@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="95dp"
+            android:layout_height="88dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/ic_launcher_background"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/coinnsymbol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="104dp"
+
+            android:paddingLeft="16dp"
+            android:text="BTC"
+            android:textSize="24dp"
+            app:layout_constraintStart_toStartOf="@+id/imageView"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/coindivider"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+            android:text="|"
+            android:textSize="24dp"
+            app:layout_constraintStart_toEndOf="@+id/coinnsymbol"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/coinname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="188dp"
+
+            android:paddingLeft="16dp"
+            android:text="Bitcoin"
+            android:textSize="24dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/priceusdtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="296dp"
+
+            android:paddingLeft="16dp"
+            android:text="USD"
+            android:textSize="24dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/sevenDayChange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="96dp"
+            android:layout_marginTop="44dp"
+
+            android:paddingLeft="16dp"
+            android:text="7d"
+            android:textSize="24dp"
+            app:layout_constraintStart_toEndOf="@+id/onehour"
+            app:layout_constraintTop_toBottomOf="@+id/priceusdtext" />
+
+        <TextView
+            android:id="@+id/onehour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="44dp"
+
+            android:paddingLeft="16dp"
+            android:text="24h"
+            android:textSize="24dp"
+            app:layout_constraintStart_toEndOf="@+id/twentyFourHour"
+            app:layout_constraintTop_toBottomOf="@+id/coinname" />
+
+        <TextView
+            android:id="@+id/twentyFourHour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="44dp"
+
+            android:paddingLeft="16dp"
+            android:text="1h"
+            android:textSize="24dp"
+            app:layout_constraintStart_toEndOf="@+id/imageView"
+            app:layout_constraintTop_toBottomOf="@+id/coinnsymbol" />
+
+        <TextView
+            android:id="@+id/doller"
+            android:layout_width="12dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="16dp"
+            android:text="$"
+            android:textSize="24dp"
+            app:layout_constraintStart_toEndOf="@+id/priceusdtext"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
